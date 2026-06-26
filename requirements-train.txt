@@ -1,0 +1,7 @@
+# Only needed if you want to RETRAIN the model locally with train.py.
+# NOT used by the deployed app — do not install this on Vercel.
+
+ultralytics>=8.2.0
+torch>=2.2.0
+onnx>=1.16.0
+onnxslim>=0.1.0

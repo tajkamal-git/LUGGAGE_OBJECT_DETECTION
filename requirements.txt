@@ -1,0 +1,11 @@
+# Runtime dependencies for the Flask screening app.
+# Deliberately NO torch / ultralytics here — inference runs on ONNX Runtime
+# so the whole deployment stays well under Vercel's 500MB function limit.
+# (See README "Why ONNX instead of PyTorch".)
+
+flask>=3.0.0
+werkzeug>=3.0.0
+onnxruntime>=1.18.0
+opencv-python-headless>=4.9.0
+numpy>=1.26.0
+gunicorn>=22.0.0

@@ -1,0 +1,9 @@
+training_reference/
+requirements-train.txt
+train.py
+dataset.yaml
+__pycache__/
+*.pyc
+.env
+.git/
+*.md

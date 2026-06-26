@@ -1,0 +1,23 @@
+train: dataset/train/images
+val: dataset/val/images
+
+nc: 11
+
+# Classes — FIXED: 'scrue' -> 'screw', 'speacts' -> 'spectacles'
+# NOTE: classes 7-10 (bottle, screw, headset, spectacles) are declared here
+# but NEITHER currently-trained model (train3 / train4) has ever seen
+# labelled examples of them -- see README "Known Model Limitations".
+# To make the screening app detect them, add labelled images for these
+# classes and retrain using train.py.
+names:
+  0: gun
+  1: knife
+  2: blade
+  3: shuriken
+  4: spring
+  5: paperclip
+  6: zipper
+  7: bottle
+  8: screw
+  9: headset
+  10: spectacles
